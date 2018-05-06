@@ -131,6 +131,13 @@ function endGame() {
   //var rocks = GAME.getElementsByClassName("rock")
   //rocks.remove()
   
+
+  var allRocks = GAME.getElementsByClassName("rock")
+  for(let i = 0; i < allRocks.length; i++){
+    allRocks[i].parentNode.removeChild(allRocks[i])
+  }
+
+
   window.removeEventListener('keydown', moveDodger)
   alert("YOU LOSE!")
 }
