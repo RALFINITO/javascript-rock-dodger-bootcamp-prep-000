@@ -134,7 +134,7 @@ function endGame() {
 
   var allRocks = GAME.getElementsByClassName("rock")
   for(let i = 0; i < allRocks.length; i++){
-    allRocks[i].parentNode.removeChild(allRocks[i])
+    allRocks[i].remove()
   }
 
 
